@@ -13,6 +13,8 @@ jobs:
 
     steps:
       - run: sudo apt-get -y -qq install awscli
+      - run: echo "[preview]" > /home/circleci/.aws/config
+      - run: echo "cloudfront=true" >> /home/circleci/.aws/config
       - checkout
       - restore_cache:
           keys:
