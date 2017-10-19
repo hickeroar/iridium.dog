@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Main from "./Main";
+import { Link } from "react-router-dom";
 
 import logo from '../assets/logo.svg';
 import './App.css';
@@ -11,6 +12,8 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
+          <Link to="/video">Video</Link>
+          <Link to="/video/foo">Specific</Link>
         </header>
         <Main/>
       </div>

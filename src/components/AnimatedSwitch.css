@@ -1,0 +1,7 @@
+.transition-route-wrapper {
+    position: relative;
+}
+
+.transition-route-wrapper > div {
+    position: absolute;
+}

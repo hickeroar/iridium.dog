@@ -1,13 +1,16 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+import AnimatedSwitch from "../AnimatedSwitch";
 import List from "./List";
 import Watch from "./Watch";
 
+
+
 const Main = () => (
-  <Switch>
+  <AnimatedSwitch>
     <Route exact path='/video/' component={List}/>
     <Route exact path='/video/:id/' component={Watch}/>
-  </Switch>
+  </AnimatedSwitch>
 );
 
 export default Main;

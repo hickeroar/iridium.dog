@@ -3,9 +3,22 @@ import React, { Component } from 'react';
 class List extends Component {
   render() {
     return (
-      <p className="App-intro">
-        Video List!
-      </p>
+      <div className="App-intro">
+        <ul>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+          <li>Video Item!</li>
+        </ul>
+      </div>
     );
   }
 }

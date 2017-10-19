@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Watch extends Component {
   render() {
     return (
-      <p className="App-intro">
-        Video Watch!
-      </p>
+      <div className="App-intro">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mb4s6MoF5Fg" frameborder="0" allowfullscreen></iframe>
+      </div>
     );
   }
 }
