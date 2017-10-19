@@ -23,7 +23,5 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn build
-      - run: pwd
-      - run: ls -alrt
-      - run: cd build
-      - run: ls -alrt
+      - run: aws s3 sync ./build/ s3://the.iridium.dog --delete
+      
