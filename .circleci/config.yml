@@ -33,5 +33,4 @@ jobs:
       - run: yarn build
       - run: aws s3 sync ./build/ s3://$S3_BUCKET_NAME --delete
       - run: sed -i "s/CIRCLE_BUILD_NUM/$CIRCLE_BUILD_NUM/g" .circleci/invalidation.json
-      - run: cat .circleci/invalidation.json
       - run: aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION --invalidation-batch file://.circleci/invalidation.json
