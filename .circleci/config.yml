@@ -12,9 +12,14 @@ jobs:
     working_directory: ~/repo
 
     steps:
+      # AWS Installation and Config
       - run: sudo apt-get -y -qq install awscli
+      - run: mkdir /home/circleci/.aws
+      - run: touch /home/circleci/.aws/config
+      - run: chmod 600 ~/.aws/config
       - run: echo "[preview]" > /home/circleci/.aws/config
       - run: echo "cloudfront=true" >> /home/circleci/.aws/config
+
       - checkout
       - restore_cache:
           keys:
