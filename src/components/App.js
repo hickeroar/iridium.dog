@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to The Iridium Dog</h1>
+          <h1 className="App-title">The Iridium Dog</h1>
           <h4>
             <Link to="/">Home</Link>
             &nbsp;
