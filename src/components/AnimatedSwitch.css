@@ -1,7 +1,9 @@
 .transition-route-wrapper {
     position: relative;
+    width: 100%;
 }
 
 .transition-route-wrapper > div {
     position: absolute;
+    width: 100%;
 }

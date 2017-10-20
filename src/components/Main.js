@@ -1,14 +1,17 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import VideoMain from "./video/Main";
+import { Route } from 'react-router-dom';
 import Index from "./Index";
+import AnimatedSwitch from "./AnimatedSwitch";
+import List from "./video/List";
+import Watch from "./video/Watch";
 
 const Main = () => (
   <main>
-    <Switch>
+    <AnimatedSwitch>
       <Route exact path='/' component={Index}/>
-      <Route path='/video/' component={VideoMain}/>
-    </Switch>
+      <Route exact path='/video/' component={List}/>
+      <Route exact path='/video/:id/' component={Watch}/>
+    </AnimatedSwitch>
   </main>
 );
 

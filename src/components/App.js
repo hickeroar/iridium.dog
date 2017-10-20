@@ -12,8 +12,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
-          <Link to="/video">Video</Link>
-          <Link to="/video/foo">Specific</Link>
+          <h4><Link to="/video">Video</Link> <Link to="/video/foo">Specific</Link></h4>
         </header>
         <Main/>
       </div>
