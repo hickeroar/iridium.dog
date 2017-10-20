@@ -1,18 +1,18 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Index from "./Index";
+import Home from "./Home";
 import AnimatedSwitch from "./AnimatedSwitch";
 import List from "./video/List";
 import Watch from "./video/Watch";
 
-const Main = () => (
+const Router = () => (
   <main>
     <AnimatedSwitch>
-      <Route exact path='/' component={Index}/>
+      <Route exact path='/' component={Home}/>
       <Route exact path='/video/' component={List}/>
       <Route exact path='/video/:id/' component={Watch}/>
     </AnimatedSwitch>
   </main>
 );
 
-export default Main;
+export default Router;
