@@ -10,7 +10,7 @@ const Router = () => (
     <AnimatedSwitch>
       <Route exact path='/' component={Home}/>
       <Route exact path='/video/' component={List}/>
-      <Route exact path='/video/:id/' component={Watch}/>
+      <Route exact path='/video/:youtubeId/' component={Watch}/>
     </AnimatedSwitch>
   </main>
 );

@@ -1,0 +1,36 @@
+.video-list {
+    text-align: left;
+}
+.video-list > div {
+    margin-bottom: 8px;
+    height: 150px;
+}
+.video-list > div:last-child {
+    margin-bottom: 0;
+}
+.video-list > div:hover {
+    background-color: #ccc;
+}
+.video-list img {
+    height: 150px;
+}
+.video-list a {
+    text-decoration: none;
+    line-height: 150px;
+    vertical-align: top;
+    color: #222;
+}
+.video-list .video-image {
+    display: inline-block;
+    width: 270px;
+    height: 150px;
+    vertical-align: top;
+}
+.video-list .video-title {
+    display: inline-block;
+    width: calc(100% - 335px);
+    height: 150px;
+    vertical-align: top;
+    padding-left: 65px;
+    font-size: 2.5rem;
+}

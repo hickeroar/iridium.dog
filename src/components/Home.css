@@ -1,0 +1,36 @@
+.home {
+    text-align: left;
+    color: #444;
+}
+.home > div {
+    margin-bottom: 8px;
+    height: 150px;
+    width: 49.5%;
+    display: inline-block;
+}
+.home > div:nth-child(even) {
+    margin-left: 1%;
+}
+.home > div:hover {
+    background-color: #ccc;
+}
+.home a {
+    text-decoration: none;
+    line-height: 150px;
+    vertical-align: top;
+}
+.home .title {
+    color: #444;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 150px;
+    font-size: 2.5rem;
+}
+.home .title i {
+    color: #444;
+    line-height: 150px !important;
+    vertical-align: middle;
+    margin-left: 115px;
+    margin-right: 50px;
+}

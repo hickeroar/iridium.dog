@@ -13,13 +13,13 @@ class AnimatedSwitch extends Component {
     return <TransitionSwitch
       atEnter={{
         opacity: 0,
-        scale: 1.2,
-        offset: 100,
+        scale: 1,
+        offset: 250,
       }}
       atLeave={{
         opacity: spring(0, this.springAttributes),
-        scale: spring(0.8, this.springAttributes),
-        offset: spring(100, this.springAttributes),
+        scale: spring(1, this.springAttributes),
+        offset: spring(250, this.springAttributes),
       }}
       atActive={{
         opacity: spring(1, this.springAttributes),
